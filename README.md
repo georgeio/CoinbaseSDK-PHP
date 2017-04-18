@@ -54,7 +54,7 @@ Coinbase Secret Key
 
 PHP
 
-## Authors
+## Author
 
 George Imoedemhe 
 
