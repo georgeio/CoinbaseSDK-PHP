@@ -5,7 +5,36 @@ CoinbaseCustomSDK - A custom class built to handle coinbase transactions.
 
 Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
+
+Simply download a copy of the class file CoinbaseCustomSDK.php and include it in your php script. 
+instantiate an object of the class CoinbaseCustomSDK e.g : 
+
+$cb_handle = new  CoinbaseCustomSDK('API_KEY', 'SECRET_KEY');
+
+You can now call public methods of the CoinbaseCustomSDK class on the initialized variable.
+
+Example
+
+Get Account ID
+$cb_handle->getAccountId();
+
+Get Coinbase Server Time
+$cb_handle->getServerTime();
+
+Get Accounts Associated To The API Key
+$cb_handle->getAccounts();
+
+Create New Address For Receiving Bitcoin/Ethereum Payment
+$name = "New Address for Payment";
+$cb_handle->createNewAddress($name);
+
+
+Create New Address For Receiving Bitcoin/Ethereum Payment
+$address = "New Address for Payment";
+$cb_handle->getAddressTransactions($address);
+
+
 
 Prerequisites
 

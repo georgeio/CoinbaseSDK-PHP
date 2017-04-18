@@ -1,5 +1,4 @@
 <?php
-
 /**
  * CoinbaseCustomSDK - A custom class built to handle coinbase transactions on http://gold2naira.com.
  *
