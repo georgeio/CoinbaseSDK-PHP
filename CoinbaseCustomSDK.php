@@ -47,13 +47,13 @@ class CoinbaseCustomSDK
 		$this->request_signature = $this->calculateRequestSign($calling_method);
 
 		$this->request_headers = [
-								"cache-control: no-cache",
-								"content-type: application/json",
-					    		"cb-version: " . CB_VERSION,
-								"cb-access-timestamp: " . $this->request_time, 
-								"cb-access-sign: " . $this->request_signature,
-								"cb-access-key: " . $this->api_key,
-							];
+							"cache-control: no-cache",
+							"content-type: application/json",
+							"cb-version: " . CB_VERSION,
+							"cb-access-timestamp: " . $this->request_time,
+							"cb-access-sign: " . $this->request_signature,
+							"cb-access-key: " . $this->api_key,
+						];
 	}
 
 	/**
