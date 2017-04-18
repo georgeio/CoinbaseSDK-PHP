@@ -56,7 +56,7 @@ PHP
 
 ## Authors
 
-George Imoedemhe - Initial work - PurpleBooth
+George Imoedemhe 
 
 ## Contributing
 
