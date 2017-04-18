@@ -2,7 +2,7 @@
 
 CoinbaseCustomSDK - A custom class built to handle coinbase transactions.
 
-##Getting Started
+## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. 
 
@@ -13,52 +13,52 @@ $cb_handle = new  CoinbaseCustomSDK('API_KEY', 'SECRET_KEY');
 ```
 You can now call public methods of the CoinbaseCustomSDK class on the initialized variable.
 
-##Example
+## Example
 
 
-###Get Account ID
+### Get Account ID
 ```php
 $cb_handle->getAccountId();
 ```
 
-###Get Coinbase Server Time
+### Get Coinbase Server Time
 ```php
 $cb_handle->getServerTime();
 ```
 
-###Get Accounts Associated To The API Key
+### Get Accounts Associated To The API Key
 ```php
 $cb_handle->getAccounts();
 ```
 
-###Create New Address For Receiving Bitcoin/Ethereum Payment
+### Create New Address For Receiving Bitcoin/Ethereum Payment
 ```php
 $name = "New Address for Payment";
 $cb_handle->createNewAddress($name);
 ```
 
-###Create New Address For Receiving Bitcoin/Ethereum Payment
+### Create New Address For Receiving Bitcoin/Ethereum Payment
 ```php
 $address = "ENTER THE BITCOIN ADDRESS / ADDRESS ID";
 $cb_handle->getAddressTransactions($address);
 ```
 
-##Prerequisites
+## Prerequisites
 
 php >= 5.6,
 CURL,
 Coinbase API Key,
 Coinbase Secret Key
 
-##Built With
+## Built With
 
 PHP
 
-##Authors
+## Authors
 
 George Imoedemhe - Initial work - PurpleBooth
 
-##Contributing
+## Contributing
 
 Fork it!
 Create your feature branch: git checkout -b my-new-feature
@@ -66,6 +66,6 @@ Commit your changes: git commit -am 'Add some feature'
 Push to the branch: git push origin my-new-feature
 Submit a pull request :D
 
-##License
+## License
 
 This project is licensed under the GNU Lesser General Public License - see the LICENSE.md file for details
