@@ -16,26 +16,31 @@ You can now call public methods of the CoinbaseCustomSDK class on the initialize
 
 Example
 
-```php
+
 Get Account ID
+```php
 $cb_handle->getAccountId();
 ```
-```php
+
 Get Coinbase Server Time
+```php
 $cb_handle->getServerTime();
 ```
-```php
+
 Get Accounts Associated To The API Key
+```php
 $cb_handle->getAccounts();
 ```
-```php
+
 Create New Address For Receiving Bitcoin/Ethereum Payment
+```php
 $name = "New Address for Payment";
 $cb_handle->createNewAddress($name);
 ```
-```php
+
 Create New Address For Receiving Bitcoin/Ethereum Payment
-$address = ENTER THE BITCOIN ADDRESS / ADDRESS ID;
+```php
+$address = "ENTER THE BITCOIN ADDRESS / ADDRESS ID";
 $cb_handle->getAddressTransactions($address);
 ```
 
