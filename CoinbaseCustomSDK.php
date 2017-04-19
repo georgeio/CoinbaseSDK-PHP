@@ -216,7 +216,7 @@ class CoinbaseCustomSDK
 
 	public function makePostRequest( $body = '' )
 	{
-		return $this->makeCurlRequest(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,2)[1]['function'], 'POST');
+		return $this->makeCurlRequest(debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS,2)[1]['function'], 'POST', $body);
 	}
 
 
