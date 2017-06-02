@@ -9,7 +9,7 @@ These instructions will get you a copy of the project up and running on your loc
 Simply download a copy of the class file CoinbaseCustomSDK.php and include it in your php script. 
 instantiate an object of the class CoinbaseCustomSDK e.g : 
 ```php
-require_once "PATH_TO_CoinbaseCustomSDKClass/CoinbaseCustomSDK.php";
+require_once "PATH_TO_COINBASE_CUSTOM_SDK_ClASS";
 $cb_handle = new  CoinbaseCustomSDK('API_KEY', 'SECRET_KEY');
 ```
 You can now call public methods of the CoinbaseCustomSDK class on the initialized object.
