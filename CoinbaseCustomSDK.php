@@ -228,13 +228,11 @@ class CoinbaseCustomSDK
 		$curl = curl_init();
 
 		curl_setopt_array($curl, array(
-			CURLOPT_URL => "https://api.coinbase.com/v2/" . $this->endpoint,
+			CURLOPT_URL => CB_API_BASE . $this->endpoint,
 			CURLOPT_RETURNTRANSFER => true,
 			CURLOPT_ENCODING => "",
 			CURLOPT_MAXREDIRS => 10,
 			CURLOPT_TIMEOUT => 30,
-	     	// CURLOPT_SSL_VERIFYPEER => false,
-	      //   CURLOPT_SSL_VERIFYHOST => 0,
 			CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
 			CURLOPT_CUSTOMREQUEST => "$method",
   			CURLOPT_POSTFIELDS => $body,
