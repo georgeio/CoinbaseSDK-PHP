@@ -38,7 +38,7 @@ $name = "New Address for Payment";
 $cb_handle->createNewAddress($name);
 ```
 
-### Create New Address For Receiving Bitcoin/Ethereum Payment
+### Get transactions associated with an address
 ```php
 $address = "ENTER THE BITCOIN ADDRESS / ADDRESS ID";
 $cb_handle->getAddressTransactions($address);
